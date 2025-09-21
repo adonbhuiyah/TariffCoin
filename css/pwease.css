@@ -1,0 +1,76 @@
+h1 {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    padding-bottom: 16px;
+    text-align:center;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    padding-bottom: 16px;
+    text-align:center;
+}
+
+p {
+    font-size: 1.08rem;
+}
+
+
+/*BUY BUTTON*/
+.animate-bg-position {
+  animation: bg-position 10s linear infinite;
+}
+.bg-size {
+  background-size: 300% auto;
+}
+
+
+/*EXCHANGES*/
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+
+.exchange-link {
+  display: inline-block;
+}
+
+.exchange-logo {
+  width: 8rem; /* Default size */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.exchange-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .exchange-logo {
+    width: 11rem;
+  }
+}
+
+
+/*ABOUT*/
+#about {
+  max-width: 32rem;
+	margin: 3rem auto;
+	padding: 1.5rem;
+	background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
